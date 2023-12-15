@@ -1,0 +1,9 @@
+[submodule "FFmpeg"]
+	path = FFmpeg
+	url = https://github.com/FFmpeg/FFmpeg.git
+[submodule "SDL"]
+	path = SDL
+	url = https://github.com/libsdl-org/SDL.git
+[submodule "nv-codec-headers"]
+	path = nv-codec-headers
+	url = https://github.com/FFmpeg/nv-codec-headers.git
