@@ -1,5 +1,5 @@
-#include <SDL3/SDL.h>
-#include <SDL3/SDL_main.h> // only include this one in the source file with main()!
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_main.h> // only include this one in the source file with main()!
 
 int main( int argc, char* argv[] )
 {

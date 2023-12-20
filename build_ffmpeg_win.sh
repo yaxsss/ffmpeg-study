@@ -23,6 +23,7 @@ export PKG_CONFIG_PATH="/d/TBuild2/Libraries/win64/local/lib/pkgconfig:$PKG_CONF
 --disable-doc \
 --disable-network \
 --disable-everything \
+--enable-gpl \
 --enable-hwaccel=av1_d3d11va \
 --enable-hwaccel=av1_d3d11va2 \
 --enable-hwaccel=av1_dxva2 \
@@ -42,8 +43,6 @@ export PKG_CONFIG_PATH="/d/TBuild2/Libraries/win64/local/lib/pkgconfig:$PKG_CONF
 --enable-hwaccel=mpeg4_nvdec \
 --enable-hwaccel=vp8_nvdec \
 --enable-protocol=file \
---enable-libopus \
---enable-libvpx \
 --enable-decoder=aac \
 --enable-decoder=aac_fixed \
 --enable-decoder=aac_latm \
@@ -120,6 +119,7 @@ export PKG_CONFIG_PATH="/d/TBuild2/Libraries/win64/local/lib/pkgconfig:$PKG_CONF
 --enable-parser=mpegaudio \
 --enable-parser=opus \
 --enable-parser=vorbis \
+--enable-parser=av1 \
 --enable-demuxer=aac \
 --enable-demuxer=flac \
 --enable-demuxer=gif \
@@ -132,7 +132,7 @@ export PKG_CONFIG_PATH="/d/TBuild2/Libraries/win64/local/lib/pkgconfig:$PKG_CONF
 --enable-demuxer=ogg \
 --enable-demuxer=wav \
 --enable-muxer=ogg \
---enable-muxer=opus
+--enable-muxer=opus 
 
-make -j8
+python -m compiledb make -j8
 make -j8 install
