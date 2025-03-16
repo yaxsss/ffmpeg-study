@@ -39,3 +39,8 @@ add_subdirectory(SDL)
 # add_subdirectory(Helloworld)
 add_subdirectory(simplest_player)
 add_subdirectory(ffplay)
+
+if(MSVC)
+    # 移除这些行（如果存在的话）
+    # add_definitions(-DUNICODE -D_UNICODE)
+endif()

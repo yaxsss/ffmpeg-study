@@ -1,1 +1,4 @@
-out/
+build/
+.cache
+local/
+.vscode/
